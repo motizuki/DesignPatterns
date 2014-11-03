@@ -3,19 +3,19 @@ package com.edu.DesignPattern.Creational.AbstractFactory.Products;
 /**
  * Created by gustavokm90 on 11/2/14.
  */
-public class Car implements Vehicle{
+public class Boat implements Vehicle{
 
     private int wheels;
     private double price;
 
-    public Car(){
-        this.setPrice(10000);
-        this.setWheels(4);
+    public Boat(){
+        this.setPrice(20000);
+        this.setWheels(0);
     }
 
     @Override
     public String wheels() {
-        return "This vehicle has "+getWheels()+" wheel(s)";
+        return "This vehicle does not need wheels";
     }
 
     @Override
@@ -23,8 +23,8 @@ public class Car implements Vehicle{
         return "This vehicle cost $"+getPrice();
     }
 
-    public String drivingInTheRoad(){
-        return "Driving in the road...";
+    public String floatingInTheSea(){
+        return "Floating in the sea...";
     }
 
     public double getPrice() {

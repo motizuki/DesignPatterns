@@ -5,6 +5,6 @@ package com.edu.DesignPattern.Creational.AbstractFactory.Products;
  */
 public interface WhiteGoods {
 
-    public int energyUsage();
-    public double price();
+    public String energyUsage();
+    public String price();
 }

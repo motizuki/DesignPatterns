@@ -5,6 +5,6 @@ package com.edu.DesignPattern.Creational.AbstractFactory.Products;
  */
 public interface Vehicle {
 
-    public int wheels();
-    public double price();
+    public String wheels();
+    public String price();
 }
