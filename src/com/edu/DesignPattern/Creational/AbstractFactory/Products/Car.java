@@ -7,6 +7,7 @@ public class Car implements Vehicle{
 
     private int wheels;
     private double price;
+    private String brand;
 
     public Car(){
         this.setPrice(10000);
@@ -44,4 +45,11 @@ public class Car implements Vehicle{
     }
 
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 }
