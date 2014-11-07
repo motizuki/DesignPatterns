@@ -10,8 +10,6 @@ public class FactoryMethod{
     public static Battery newOrdinaryBattery(){
 
         //Setting all attributes to create the ordinary battery object parameters and any other procedure.
-
-        //setting these data here just for a matter of test, this should be handled  by the factory method
         final String productName = "ORDINARY BATTERY";
         final String fabCompany = "ORDINARIES";
         final Boolean perishable = false;
