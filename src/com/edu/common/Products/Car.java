@@ -1,21 +1,22 @@
-package com.edu.DesignPattern.Creational.AbstractFactory.Products;
+package com.edu.common.Products;
 
 /**
  * Created by gustavokm90 on 11/2/14.
  */
-public class Boat implements Vehicle{
+public class Car implements Vehicle{
 
     private int wheels;
     private double price;
+    private String brand;
 
-    public Boat(){
-        this.setPrice(20000);
-        this.setWheels(0);
+    public Car(){
+        this.setPrice(10000);
+        this.setWheels(4);
     }
 
     @Override
     public String wheels() {
-        return "This vehicle does not need wheels";
+        return "This vehicle has "+getWheels()+" wheel(s)";
     }
 
     @Override
@@ -23,8 +24,8 @@ public class Boat implements Vehicle{
         return "This vehicle cost $"+getPrice();
     }
 
-    public String floatingInTheSea(){
-        return "Floating in the sea...";
+    public String drivingInTheRoad(){
+        return "Driving in the road...";
     }
 
     public double getPrice() {
@@ -44,4 +45,11 @@ public class Boat implements Vehicle{
     }
 
 
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 }

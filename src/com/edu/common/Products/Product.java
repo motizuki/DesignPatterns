@@ -1,4 +1,4 @@
-package com.edu.DesignPattern.Creational.FactoryMethod;
+package com.edu.common.Products;
 
 import java.util.Date;
 
@@ -6,7 +6,7 @@ import java.util.Date;
  * Created by gustavokm90 on 11/5/14.
  * Standard product class
  */
-abstract class Product {
+public abstract class Product {
 
     protected String productName;
     protected String fabCompany;

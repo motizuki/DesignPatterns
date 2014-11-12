@@ -1,21 +1,21 @@
-package com.edu.DesignPattern.Creational.AbstractFactory.Products;
+package com.edu.common.Products;
 
 /**
  * Created by gustavokm90 on 11/2/14.
  */
-public class Fridge implements WhiteGoods{
+public class Oven implements WhiteGoods{
 
     private int potency;
     private double price;
 
-    public Fridge(){
-        this.setPrice(500);
-        this.setPotency(200);
+    public Oven(){
+        this.setPrice(1000);
+        this.setPotency(300);
     }
 
     @Override
     public String energyUsage() {
-        return "This white good consume "+getPotency()*100+" energy per hour";
+        return "This white good consume "+getPotency()+" cubic meter of gas per hour";
     }
 
     @Override
@@ -23,8 +23,8 @@ public class Fridge implements WhiteGoods{
         return "This white good cost $"+getPrice();
     }
 
-    public String freezing(){
-        return "Freezing...";
+    public String bake(){
+        return "Baking...";
     }
 
     public int getPotency() {

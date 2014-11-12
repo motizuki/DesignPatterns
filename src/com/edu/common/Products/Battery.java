@@ -1,11 +1,13 @@
-package com.edu.DesignPattern.Creational.FactoryMethod;
+package com.edu.common.Products;
 
+
+import com.edu.common.Products.Product;
 
 /**
  * Created by gustavokm90 on 11/5/14.
  * A type of product
  */
-abstract class Battery extends Product {
+public abstract class Battery extends Product {
 
     protected Integer batterySize;
     protected Integer batteryCapacity;

@@ -1,4 +1,4 @@
-package com.edu.DesignPattern.Creational.AbstractFactory.CustomExceptions;
+package com.edu.common.CustomExceptions;
 
 /**
  * Created by gustavokm90 on 11/3/14.

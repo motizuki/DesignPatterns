@@ -1,7 +1,7 @@
-package com.edu.DesignPattern.Creational.Builder;
+package com.edu.common.Products;
 
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Boat;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Car;
+import com.edu.common.Products.Boat;
+import com.edu.common.Products.Car;
 
 import java.util.Map;
 
