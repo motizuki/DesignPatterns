@@ -1,12 +1,12 @@
 package com.edu.DesignPattern.Creational.AbstractFactory;
 
-import com.edu.DesignPattern.Creational.AbstractFactory.CustomExceptions.InvalidOperationException;
+import com.edu.common.CustomExceptions.InvalidOperationException;
 import com.edu.DesignPattern.Creational.AbstractFactory.Factories.AbstractFactory;
 import com.edu.DesignPattern.Creational.AbstractFactory.Factories.FactoryProducer;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Car;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Oven;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Vehicle;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.WhiteGoods;
+import com.edu.common.Products.Car;
+import com.edu.common.Products.Oven;
+import com.edu.common.Products.Vehicle;
+import com.edu.common.Products.WhiteGoods;
 
 /**
  * Created by gustavokm90 on 11/3/14.
@@ -30,11 +30,6 @@ public class AbstractFactoryDesignPatternDemo {
 
             WhiteGoods fridge = whiteGoodsFactory.createWhiteGood("Fridge");
             System.out.println(fridge.energyUsage());
-
-            //whiteGoodsFactory.createWhiteGood("Lol");
-            //vehicleFactory.createVehicle("lo");
-            //vehicleFactory.createWhiteGood("234");
-            //FactoryProducer.getFactory("123");
 
 
         } catch (InvalidOperationException e) {

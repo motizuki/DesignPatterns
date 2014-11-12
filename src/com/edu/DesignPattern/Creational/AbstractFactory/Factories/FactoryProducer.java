@@ -1,6 +1,6 @@
 package com.edu.DesignPattern.Creational.AbstractFactory.Factories;
 
-import com.edu.DesignPattern.Creational.AbstractFactory.CustomExceptions.InvalidOperationException;
+import com.edu.common.CustomExceptions.InvalidOperationException;
 
 /**
  * Created by gustavokm90 on 11/3/14.

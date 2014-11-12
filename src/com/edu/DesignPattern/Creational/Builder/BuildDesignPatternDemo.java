@@ -1,6 +1,7 @@
 package com.edu.DesignPattern.Creational.Builder;
 
-import com.edu.DesignPattern.Creational.AbstractFactory.CustomExceptions.InvalidOperationException;
+import com.edu.common.CustomExceptions.InvalidOperationException;
+import com.edu.common.Products.Garage;
 
 /**
  * Created by gustavokm90 on 11/6/14.

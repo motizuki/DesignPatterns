@@ -1,12 +1,10 @@
 package com.edu.DesignPattern.Creational.Builder;
 
-import com.edu.DesignPattern.Creational.AbstractFactory.CustomExceptions.InvalidOperationException;
-import com.edu.DesignPattern.Creational.AbstractFactory.Factories.AbstractFactory;
+import com.edu.common.CustomExceptions.InvalidOperationException;
 import com.edu.DesignPattern.Creational.AbstractFactory.Factories.VehicleFactory;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Boat;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Car;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Vehicle;
-import com.edu.DesignPattern.Creational.FactoryMethod.FactoryMethod;
+import com.edu.common.Products.Boat;
+import com.edu.common.Products.Car;
+import com.edu.common.Products.Garage;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,8 +1,8 @@
 package com.edu.DesignPattern.Creational.LazyInitialization;
 
-import com.edu.DesignPattern.Creational.AbstractFactory.CustomExceptions.InvalidOperationException;
+import com.edu.common.CustomExceptions.InvalidOperationException;
 import com.edu.DesignPattern.Creational.AbstractFactory.Factories.VehicleFactory;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Vehicle;
+import com.edu.common.Products.Vehicle;
 
 import java.util.HashMap;
 import java.util.Map;

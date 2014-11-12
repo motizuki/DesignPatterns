@@ -1,9 +1,8 @@
 package com.edu.DesignPattern.Creational.LazyInitialization;
 
-import com.edu.DesignPattern.Creational.AbstractFactory.CustomExceptions.InvalidOperationException;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Boat;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Car;
-import com.edu.DesignPattern.Creational.AbstractFactory.Products.Vehicle;
+import com.edu.common.CustomExceptions.InvalidOperationException;
+import com.edu.common.Products.Boat;
+import com.edu.common.Products.Car;
 
 /**
  * Created by gustavokm90 on 11/6/14.
