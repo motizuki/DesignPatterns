@@ -1,7 +1,5 @@
 package com.edu.common.Products;
 
-import com.edu.DesignPattern.Structural.Adapter.ObjectAdapter;
-
 /**
  * Created by gustavokm90 on 11/2/14.
  */

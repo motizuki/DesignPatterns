@@ -1,16 +1,19 @@
-package com.edu.common.Products;
+package com.edu.DesignPattern.Structural.Adapter;
+
+import com.edu.common.Products.AdvancedVehicle;
+import com.edu.common.Products.Vehicle;
 
 /**
- * Created by gustavokm90 on 11/22/14.
+ * Created by gustavokm90 on 11/21/14.
  */
-public class AdvancedCar implements AdvancedVehicle {
+public class VehicleClassAdapter implements Vehicle, AdvancedVehicle {
 
     private String wheels;
     private String price;
     private String turbo;
 
 
-    public AdvancedCar(String carType) {
+    public VehicleClassAdapter(String carType) {
         if (carType.equals("advCar")){
             this.wheels = "Activating Class turbo wheels";
             this.price = "Activation Class turbo price";
@@ -33,4 +36,18 @@ public class AdvancedCar implements AdvancedVehicle {
         return this.wheels;
     }
 
+    @Override
+    public String wheels() {
+        return turboWheels();
+    }
+
+    @Override
+    public String price() {
+        return turboPrice();
+    }
+
+    @Override
+    public String turbo() {
+        return turboBooster();
+    }
 }

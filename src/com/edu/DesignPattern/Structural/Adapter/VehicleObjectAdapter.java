@@ -7,17 +7,21 @@ import com.edu.common.Products.Vehicle;
 /**
  * Created by gustavokm90 on 11/21/14.
  */
-public class ObjectAdapter implements Vehicle{
+public class VehicleObjectAdapter implements Vehicle{
 
     //Adaptor for the interface AdvancedVehicle to Vehicle
 
     AdvancedVehicle advancedVehicle;
 
-    public ObjectAdapter(String carType) {
+    public VehicleObjectAdapter(String carType) {
         if (carType.equals("advCar")){
-            advancedVehicle = new AdvancedCar();
+
+            //creating the object that is going to be adapted to Vehicle class
+            advancedVehicle = new AdvancedCar(carType);
         }
     }
+
+    //Adapting the methods to Vehicle class
 
     @Override
     public String wheels() {

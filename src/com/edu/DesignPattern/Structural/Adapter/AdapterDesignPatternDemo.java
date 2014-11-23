@@ -11,18 +11,30 @@ public class AdapterDesignPatternDemo {
 
     public static void main (String[] args){
 
-        //Testing a object related adaptor
-        Vehicle advancedCar = new ObjectAdapter("advCar");
-
-        System.out.println(advancedCar.price());
-        System.out.println(advancedCar.wheels());
-        System.out.println(advancedCar.turbo());
-
         Vehicle car = new Car();
 
-        System.out.println(car.price());
-        System.out.println(car.wheels());
-        System.out.println(car.turbo());
+        System.out.println("Car instance: " +car.price());
+        System.out.println("Car instance: " +car.wheels());
+        System.out.println("Car instance: " +car.turbo());
+
+        //Testing a object related adaptor, adapting a AdvancedVehicle interface to Vehicle interface
+        Vehicle advancedObjectCarAdapted = new VehicleObjectAdapter("advCar");
+
+        System.out.println("Object adapter: " + advancedObjectCarAdapted.price());
+        System.out.println("Object adapter: " + advancedObjectCarAdapted.wheels());
+        System.out.println("Object adapter: " +advancedObjectCarAdapted.turbo());
+
+        AdvancedVehicle advancedClassCar = new VehicleClassAdapter("advCar");
+
+        System.out.println("Class advancedVehicle: " + advancedClassCar.turboPrice());
+        System.out.println("Class advancedVehicle: " + advancedClassCar.turboWheels());
+        System.out.println("Class advancedVehicle: " + advancedClassCar.turboBooster());
+
+        Vehicle advancedClassCarAdapted = (Vehicle) advancedClassCar;
+
+        System.out.println("Class adapter: " + advancedClassCarAdapted.price());
+        System.out.println("Class adapter: " + advancedClassCarAdapted.wheels());
+        System.out.println("Class adapter: " + advancedClassCarAdapted.turbo());
 
 
     }
