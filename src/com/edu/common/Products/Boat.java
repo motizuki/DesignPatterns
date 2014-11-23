@@ -23,6 +23,10 @@ public class Boat implements Vehicle{
         return "This vehicle cost $"+getPrice();
     }
 
+    public String turbo(){
+        return "Normal boats does not have turbo!";
+    }
+
     public String floatingInTheSea(){
         return "Floating in the sea...";
     }

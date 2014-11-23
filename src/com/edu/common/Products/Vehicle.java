@@ -7,4 +7,5 @@ public interface Vehicle {
 
     public String wheels();
     public String price();
+    public String turbo();
 }

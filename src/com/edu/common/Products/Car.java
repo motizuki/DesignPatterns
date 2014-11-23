@@ -1,5 +1,7 @@
 package com.edu.common.Products;
 
+import com.edu.DesignPattern.Structural.Adapter.ObjectAdapter;
+
 /**
  * Created by gustavokm90 on 11/2/14.
  */
@@ -26,6 +28,10 @@ public class Car implements Vehicle{
 
     public String drivingInTheRoad(){
         return "Driving in the road...";
+    }
+
+    public String turbo(){
+        return "Normal cars does not have turbo!";
     }
 
     public double getPrice() {
