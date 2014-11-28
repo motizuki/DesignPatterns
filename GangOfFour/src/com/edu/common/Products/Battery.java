@@ -1,8 +1,5 @@
 package com.edu.common.Products;
 
-
-import com.edu.common.Products.Product;
-
 /**
  * Created by gustavokm90 on 11/5/14.
  * A type of product

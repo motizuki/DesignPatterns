@@ -48,7 +48,6 @@ public class Car implements Vehicle{
         this.wheels = wheels;
     }
 
-
     public String getBrand() {
         return brand;
     }

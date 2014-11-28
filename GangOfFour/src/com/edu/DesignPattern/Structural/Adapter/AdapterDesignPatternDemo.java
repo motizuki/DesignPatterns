@@ -7,13 +7,15 @@ import com.edu.common.Products.Vehicle;
 /**
  * Created by gustavokm90 on 11/21/14.
  */
-public class AdapterDesignPatternDemo {
+ public class AdapterDesignPatternDemo {
 
-    public static void main (String[] args){
+    public static final String a = "1";
+
+    static public void main (String... x){
 
         Vehicle car = new Car();
 
-        System.out.println("Car instance: " +car.price());
+        System.out.println("Car instance: " +car.price() + a.getClass().toString());
         System.out.println("Car instance: " +car.wheels());
         System.out.println("Car instance: " +car.turbo());
 
