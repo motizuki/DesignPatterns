@@ -1,7 +1,5 @@
 package com.edu.common.Products;
 
-import com.edu.common.Products.Boat;
-import com.edu.common.Products.Car;
 
 import java.util.Map;
 
