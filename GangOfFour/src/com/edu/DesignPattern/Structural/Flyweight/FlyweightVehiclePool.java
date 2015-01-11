@@ -11,7 +11,7 @@ import java.util.HashMap;
  */
 public class FlyweightVehiclePool {
 
-    private static final HashMap<String, Vehicle> vehicleMap = new HashMap();
+    private static final HashMap<String, Vehicle> vehicleMap = new HashMap<String, Vehicle>();
 
     public static Vehicle getVehicle(String color, String type){
 

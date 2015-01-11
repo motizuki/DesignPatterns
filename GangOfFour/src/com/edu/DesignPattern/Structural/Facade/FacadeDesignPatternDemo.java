@@ -6,7 +6,7 @@ package com.edu.DesignPattern.Structural.Facade;
 public class FacadeDesignPatternDemo {
     public static void main(String[] args){
 
-        //interface facade to an hybrid car, instanciating 2 objects car and boat, and use their methods
+        //interface facade to an hybrid car, instantiating 2 objects car and boat, and use their methods
         HybridVehicle hybridVehicle = new HybridVehicle();
 
         hybridVehicle.DriveOnTheRoad();
