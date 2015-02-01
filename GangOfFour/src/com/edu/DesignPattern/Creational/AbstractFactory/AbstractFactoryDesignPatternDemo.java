@@ -18,7 +18,7 @@ public class AbstractFactoryDesignPatternDemo {
             AbstractFactory vehicleFactory = FactoryProducer.getFactory("Vehicle");
 
             Car car = (Car) vehicleFactory.createVehicle("Car");
-            System.out.println(car.drivingInTheRoad());
+            System.out.println(car.drivingOnTheRoad());
 
             Vehicle boat = vehicleFactory.createVehicle("Boat");
             System.out.println(boat.wheels());

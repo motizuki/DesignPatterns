@@ -24,8 +24,8 @@ public class Car implements Vehicle{
         return "This vehicle cost $"+getPrice();
     }
 
-    public String drivingInTheRoad(){
-        return "Driving in the road...";
+    public String drivingOnTheRoad(){
+        return "Driving on the road...";
     }
 
     public String turbo(){

@@ -21,7 +21,7 @@ public class HybridVehicle {
     }
 
     public void DriveOnTheRoad(){
-        System.out.println(car.drivingInTheRoad());
+        System.out.println(car.drivingOnTheRoad());
     }
 
 }
