@@ -10,9 +10,9 @@ import org.springframework.context.annotation.Configuration;
  * Created by gustavokm90 on 3/12/15.
  */
 @Configuration
-public class ConfigProducts {
+public class ConfigExampleClasses {
 
-    private static final Logger logger = LoggerFactory.getLogger(ConfigProducts.class);
+    private static final Logger logger = LoggerFactory.getLogger(ConfigExampleClasses.class);
 
     @Bean(name = "car")
     public Vehicle car(){

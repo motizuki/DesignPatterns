@@ -1,4 +1,4 @@
-package com.edu.common.exampleclasses;
+package com.edu.common.exampleclasses.concreteclasses;
 
 
 import java.util.Map;

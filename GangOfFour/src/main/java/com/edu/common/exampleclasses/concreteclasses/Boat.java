@@ -1,12 +1,13 @@
-package com.edu.common.exampleclasses;
+package com.edu.common.exampleclasses.concreteclasses;
 
 import com.edu.annotations.ApplicationService;
+import com.edu.common.exampleclasses.Vehicle;
 
 /**
  * Created by gustavokm90 on 11/2/14.
  */
 @ApplicationService
-public class Boat implements Vehicle{
+public class Boat implements Vehicle {
 
     private int wheels;
     private double price;

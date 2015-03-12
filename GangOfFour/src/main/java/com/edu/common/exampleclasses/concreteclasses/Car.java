@@ -1,12 +1,13 @@
-package com.edu.common.exampleclasses;
+package com.edu.common.exampleclasses.concreteclasses;
 
 import com.edu.annotations.ApplicationService;
+import com.edu.common.exampleclasses.Vehicle;
 
 /**
  * Created by gustavokm90 on 11/2/14.
  */
 @ApplicationService
-public class Car implements Vehicle{
+public class Car implements Vehicle {
 
     private int wheels;
     private double price;
@@ -15,29 +16,6 @@ public class Car implements Vehicle{
     public Car(){
         this.setPrice(10000);
         this.setWheels(4);
-    }
-
-    @Override
-    public String wheels() {
-        return "This vehicle has "+getWheels()+" wheel(s)";
-    }
-
-    @Override
-    public String price() {
-        return "This vehicle cost $"+getPrice();
-    }
-
-    public String drivingOnTheRoad(){
-        return "Driving on the road...";
-    }
-
-    public String turbo(){
-        return "Normal cars does not have turbo!";
-    }
-
-    @Override
-    public String specificAction() {
-        return "Driving on the road...";
     }
 
     public double getPrice() {
@@ -63,4 +41,28 @@ public class Car implements Vehicle{
     public void setBrand(String brand) {
         this.brand = brand;
     }
+
+    @Override
+    public String wheels() {
+        return "This vehicle has "+getWheels()+" wheel(s)";
+    }
+
+    @Override
+    public String price() {
+        return "This vehicle cost $"+getPrice();
+    }
+
+    public String drivingOnTheRoad(){
+        return "Driving on the road...";
+    }
+
+    public String turbo(){
+        return "Normal cars does not have turbo!";
+    }
+
+    @Override
+    public String specificAction() {
+        return "Driving on the road...";
+    }
+
 }

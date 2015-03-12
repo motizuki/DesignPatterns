@@ -1,4 +1,6 @@
-package com.edu.common.exampleclasses;
+package com.edu.common.exampleclasses.concreteclasses;
+
+import com.edu.common.exampleclasses.AdvancedVehicle;
 
 /**
  * Created by gustavokm90 on 11/22/14.
