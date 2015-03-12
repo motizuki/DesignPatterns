@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <!-- To enable JMX Management -->
+    <jmxConfigurator/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{dd-MM-YYYY HH:mm:ss.SSS}|%level|%-40.40logger{0}|%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Appender LILITH -->
+
+    <appender name="lilith" class="ch.qos.logback.classic.net.SocketAppender">
+        <RemoteHost>localhost</RemoteHost>
+        <Port>4560</Port>
+        <ReconnectionDelay>170</ReconnectionDelay>
+        <IncludeCallerData>true</IncludeCallerData>
+    </appender>
+
+    <logger name="com.edu" level="debug" />
+
+    <logger name="org.springframework" level="warn" />
+
+    <logger name="org.springframework.beans" level="warn" />
+
+    <root level="warn">
+        <appender-ref ref="console" />
+        <appender-ref ref="lilith" />
+    </root>
+</configuration>
