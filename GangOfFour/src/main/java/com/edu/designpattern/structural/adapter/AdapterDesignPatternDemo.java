@@ -1,7 +1,7 @@
 package com.edu.designpattern.structural.adapter;
 
 import com.edu.common.exampleclasses.AdvancedVehicle;
-import com.edu.common.exampleclasses.Car;
+import com.edu.common.exampleclasses.concreteclasses.Car;
 import com.edu.common.exampleclasses.Vehicle;
 
 /**

@@ -1,4 +1,4 @@
-package com.edu.common.exampleclasses.lab;
+package com.edu.common.customexceptions;
 
 /**
  * Created by gustavokm90 on 12/27/14.

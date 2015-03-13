@@ -3,8 +3,8 @@ package com.edu.designpattern.creational.abstractfactory;
 import com.edu.common.customexceptions.InvalidOperationException;
 import com.edu.designpattern.creational.abstractfactory.Factories.AbstractFactory;
 import com.edu.designpattern.creational.abstractfactory.Factories.FactoryProducer;
-import com.edu.common.exampleclasses.Car;
-import com.edu.common.exampleclasses.Oven;
+import com.edu.common.exampleclasses.concreteclasses.Car;
+import com.edu.common.exampleclasses.concreteclasses.Oven;
 import com.edu.common.exampleclasses.Vehicle;
 import com.edu.common.exampleclasses.WhiteGoods;
 

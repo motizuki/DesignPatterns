@@ -1,8 +1,8 @@
 package com.edu.designpattern.creational.abstractfactory.Factories;
 
 import com.edu.common.customexceptions.InvalidOperationException;
-import com.edu.common.exampleclasses.Boat;
-import com.edu.common.exampleclasses.Car;
+import com.edu.common.exampleclasses.concreteclasses.Boat;
+import com.edu.common.exampleclasses.concreteclasses.Car;
 import com.edu.common.exampleclasses.Vehicle;
 import com.edu.common.exampleclasses.WhiteGoods;
 

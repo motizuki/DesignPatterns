@@ -1,7 +1,6 @@
 package com.edu.designpattern.creational.builder;
 
 import com.edu.common.customexceptions.InvalidOperationException;
-import com.edu.common.exampleclasses.Garage;
 
 /**
  * Created by gustavokm90 on 11/6/14.

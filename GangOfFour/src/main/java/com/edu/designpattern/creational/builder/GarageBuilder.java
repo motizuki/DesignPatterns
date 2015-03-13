@@ -2,9 +2,8 @@ package com.edu.designpattern.creational.builder;
 
 import com.edu.common.customexceptions.InvalidOperationException;
 import com.edu.designpattern.creational.abstractfactory.Factories.VehicleFactory;
-import com.edu.common.exampleclasses.Boat;
-import com.edu.common.exampleclasses.Car;
-import com.edu.common.exampleclasses.Garage;
+import com.edu.common.exampleclasses.concreteclasses.Boat;
+import com.edu.common.exampleclasses.concreteclasses.Car;
 
 import java.util.HashMap;
 import java.util.Map;

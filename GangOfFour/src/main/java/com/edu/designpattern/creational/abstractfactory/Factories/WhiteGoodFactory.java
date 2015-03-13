@@ -1,8 +1,8 @@
 package com.edu.designpattern.creational.abstractfactory.Factories;
 
 import com.edu.common.customexceptions.InvalidOperationException;
-import com.edu.common.exampleclasses.Fridge;
-import com.edu.common.exampleclasses.Oven;
+import com.edu.common.exampleclasses.concreteclasses.Fridge;
+import com.edu.common.exampleclasses.concreteclasses.Oven;
 import com.edu.common.exampleclasses.Vehicle;
 import com.edu.common.exampleclasses.WhiteGoods;
 

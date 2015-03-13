@@ -1,5 +1,8 @@
-package com.edu.common.exampleclasses.concreteclasses;
+package com.edu.designpattern.creational.builder;
 
+
+import com.edu.common.exampleclasses.concreteclasses.Boat;
+import com.edu.common.exampleclasses.concreteclasses.Car;
 
 import java.util.Map;
 

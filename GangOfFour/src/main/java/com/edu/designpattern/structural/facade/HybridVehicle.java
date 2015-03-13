@@ -2,6 +2,7 @@ package com.edu.designpattern.structural.facade;
 
 import com.edu.annotations.ApplicationService;
 import com.edu.common.exampleclasses.*;
+import com.edu.common.exampleclasses.concreteclasses.Car;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,6 +1,7 @@
 package com.edu.springconfigclasses;
 
 import com.edu.common.exampleclasses.*;
+import com.edu.common.exampleclasses.concreteclasses.Car;
 import com.edu.designpattern.structural.facade.HybridVehicle;
 import org.aspectj.lang.JoinPoint;
 
@@ -21,7 +22,7 @@ import org.springframework.context.annotation.Import;
 @Aspect
 @Configuration
 @EnableAspectJAutoProxy
-@Import({ConfigProducts.class})
+@Import({ConfigExampleClasses.class})
 public class ConfigFacade {
 
     private static final Logger logger = LoggerFactory.getLogger(ConfigFacade.class);

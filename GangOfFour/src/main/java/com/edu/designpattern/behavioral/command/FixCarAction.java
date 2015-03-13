@@ -3,7 +3,7 @@ package com.edu.designpattern.behavioral.command;
 import com.edu.designpattern.behavioral.chainofresponsibility.AudiMechanic;
 import com.edu.designpattern.behavioral.chainofresponsibility.FiatMechanic;
 import com.edu.designpattern.behavioral.chainofresponsibility.Mechanic;
-import com.edu.common.exampleclasses.Car;
+import com.edu.common.exampleclasses.concreteclasses.Car;
 
 /**
  * Created by gustavokm90 on 1/28/15.

@@ -1,6 +1,6 @@
 package com.edu.designpattern.behavioral.command;
 
-import com.edu.common.exampleclasses.Car;
+import com.edu.common.exampleclasses.concreteclasses.Car;
 
 /**
  * Created by gustavokm90 on 1/28/15.
