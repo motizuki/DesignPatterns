@@ -1,5 +1,8 @@
 package com.edu.designpattern.creational.prototype;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Random;
 
 /**
@@ -7,12 +10,14 @@ import java.util.Random;
  */
 public class Account1 extends BankAccount{
 
+    private static final Logger logger = LoggerFactory.getLogger(Account1.class);
+
     public Account1 (){
         id = new Random().nextInt();
     }
 
     @Override
     void checkMoney() {
-        System.out.println("the account "+getId()+" from "+ getCustomerName() +" have: $"+getSavings());
+        logger.info("the account "+getId()+" from "+ getCustomerName() +" have: $"+getSavings());
     }
 }

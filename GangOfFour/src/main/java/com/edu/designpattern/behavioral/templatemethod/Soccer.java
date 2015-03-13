@@ -1,24 +1,29 @@
 package com.edu.designpattern.behavioral.templatemethod;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by gustavokm90 on 1/31/15.
  */
 public class Soccer extends Game{
+    private static final Logger logger = LoggerFactory.getLogger(Soccer.class);
+
     @Override
     void initialize() {
-        System.out.println("Soccer Game Initialized!");
+        logger.info("Soccer Game Initialized!");
 
     }
 
     @Override
     void start() {
-        System.out.println("Soccer Game Started!");
+        logger.info("Soccer Game Started!");
 
     }
 
     @Override
     void end() {
-        System.out.println("Soccer Game Finished!");
+        logger.info("Soccer Game Finished!");
 
     }
 }

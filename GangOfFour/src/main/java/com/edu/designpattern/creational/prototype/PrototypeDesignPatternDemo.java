@@ -1,9 +1,14 @@
 package com.edu.designpattern.creational.prototype;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by gustavokm90 on 11/6/14.
  */
 public class PrototypeDesignPatternDemo {
+
+    private static final Logger logger = LoggerFactory.getLogger(PrototypeDesignPatternDemo.class);
 
     public static void main (String[] args){
 
@@ -15,7 +20,7 @@ public class PrototypeDesignPatternDemo {
         acc2.setCustomerName("Gustavo");
         acc3.setCustomerName("Norio");
 
-        System.out.println("Before Cloning");
+        logger.info("Before Cloning");
         acc1.checkMoney();
         acc2.checkMoney();
         acc3.checkMoney();
@@ -29,12 +34,12 @@ public class PrototypeDesignPatternDemo {
         clonedAcc2.setCustomerName("Cloned Gustavo");
         clonedAcc3.setCustomerName("Cloned Norio");
 
-        System.out.println("After Cloning");
+        logger.info("After Cloning");
         acc1.checkMoney();
         acc2.checkMoney();
         acc3.checkMoney();
 
-        System.out.println("Cloned instances");
+        logger.info("Cloned instances");
         clonedAcc1.checkMoney();
         clonedAcc2.checkMoney();
         clonedAcc3.checkMoney();

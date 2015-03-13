@@ -1,9 +1,14 @@
 package com.edu.designpattern.behavioral.state;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by gustavokm90 on 1/31/15.
  */
 public class Context {
+
+    private static final Logger logger = LoggerFactory.getLogger(Context.class);
 
     private State state;
 
@@ -21,7 +26,7 @@ public class Context {
     }
 
     public void request(String input){
-        System.out.println("Send request: "+input+ " with the state: "+this.getState().toString());
+        logger.info("Send request: "+input+ " with the state: "+this.getState().toString());
         state.doAction(this);
     }
 

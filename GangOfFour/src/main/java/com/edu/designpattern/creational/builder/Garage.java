@@ -3,6 +3,8 @@ package com.edu.designpattern.creational.builder;
 
 import com.edu.common.exampleclasses.concreteclasses.Boat;
 import com.edu.common.exampleclasses.concreteclasses.Car;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
@@ -10,6 +12,8 @@ import java.util.Map;
  * Created by gustavokm90 on 11/6/14.
  */
 public class Garage {
+    private static final Logger logger = LoggerFactory.getLogger(Garage.class);
+
 
     private Map<String, Car> cars;
     private Map<String, Boat> boats;
@@ -21,10 +25,10 @@ public class Garage {
 
     public void showGarageVehicles(){
         for (Map.Entry<String,Car> entry : cars.entrySet()){
-            System.out.println("Cars: "+ entry.getKey() +" - "+ entry.getValue().getBrand());
+            logger.info("Cars: " + entry.getKey() + " - " + entry.getValue().getBrand());
         }
         for (Map.Entry<String,Boat> entry : boats.entrySet()){
-            System.out.println("Boats: "+ entry.getKey() +" - "+ entry.getValue().getPrice());
+            logger.info("Boats: " + entry.getKey() + " - " + entry.getValue().getPrice());
         }
 
     }

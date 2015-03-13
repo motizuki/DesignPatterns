@@ -1,10 +1,16 @@
 package com.edu.common.exampleclasses;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by gustavokm90 on 11/5/14.
  * Standard product class
  */
 public abstract class Product {
+
+    private static final Logger logger = LoggerFactory.getLogger(Product.class);
+
 
     protected String productName;
     protected String fabCompany;
@@ -41,7 +47,7 @@ public abstract class Product {
     }
 
     public void whoAmI(){
-        System.out.println("I am any product");
+        logger.info("I am any product");
     }
 
     @Override

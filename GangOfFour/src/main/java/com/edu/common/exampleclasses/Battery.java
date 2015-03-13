@@ -1,11 +1,15 @@
 package com.edu.common.exampleclasses;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by gustavokm90 on 11/5/14.
  * A type of product
  */
 public abstract class Battery extends Product {
 
+    private static final Logger logger = LoggerFactory.getLogger(Battery.class);
     protected Integer batterySize;
     protected Integer batteryCapacity;
 
@@ -42,6 +46,6 @@ public abstract class Battery extends Product {
 
     @Override
     public void whoAmI(){
-        System.out.println("I am any battery");
+        logger.info("I am any battery");
     }
 }

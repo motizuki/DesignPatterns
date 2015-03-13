@@ -1,9 +1,14 @@
 package com.edu.designpattern.creational.singleton;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by gustavokm90 on 11/5/14.
  */
 public class Singleton {
+    private static final Logger logger = LoggerFactory.getLogger(Singleton.class);
+
 
     public static Singleton instance = new Singleton();
 
@@ -16,7 +21,7 @@ public class Singleton {
     }
 
     public void showMessage(){
-        System.out.println("I am a singleton");
+        logger.info("I am a singleton");
 
     }
 }

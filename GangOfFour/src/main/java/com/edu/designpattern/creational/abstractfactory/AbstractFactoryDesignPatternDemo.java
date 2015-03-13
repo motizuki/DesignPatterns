@@ -7,29 +7,33 @@ import com.edu.common.exampleclasses.concreteclasses.Car;
 import com.edu.common.exampleclasses.concreteclasses.Oven;
 import com.edu.common.exampleclasses.Vehicle;
 import com.edu.common.exampleclasses.WhiteGoods;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by gustavokm90 on 11/3/14.
  */
 public class AbstractFactoryDesignPatternDemo {
+    private static final Logger logger = LoggerFactory.getLogger(AbstractFactoryDesignPatternDemo.class);
+
     public static void main(String[] args){
 
         try {
             AbstractFactory vehicleFactory = FactoryProducer.getFactory("Vehicle");
 
             Car car = (Car) vehicleFactory.createVehicle("Car");
-            System.out.println(car.drivingOnTheRoad());
+            logger.info(car.drivingOnTheRoad());
 
             Vehicle boat = vehicleFactory.createVehicle("Boat");
-            System.out.println(boat.wheels());
+            logger.info(boat.wheels());
 
             AbstractFactory whiteGoodsFactory = FactoryProducer.getFactory("WhiteGood");
 
             Oven oven = (Oven) whiteGoodsFactory.createWhiteGood("Oven");
-            System.out.println(oven.bake());
+            logger.info(oven.bake());
 
             WhiteGoods fridge = whiteGoodsFactory.createWhiteGood("Fridge");
-            System.out.println(fridge.energyUsage());
+            logger.info(fridge.energyUsage());
 
 
         } catch (InvalidOperationException e) {
